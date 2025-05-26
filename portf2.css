@@ -1,0 +1,101 @@
+body {
+      margin: 0;
+      min-height: 100vh;
+      background: 
+        linear-gradient(to top left, #2a3fe1, transparent 90vh),
+        linear-gradient(to top right, #ef9dd9, transparent 70vh),
+        linear-gradient(to bottom left, #ef9dd9, transparent 70vh),
+        linear-gradient(to bottom right, #dd32e2, transparent 100vh);
+      background-blend-mode: screen;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      font-family: Arial, sans-serif;
+      color: #222;
+      overflow-y: auto;
+    }
+
+    header {
+      height: 110px;
+      background-color: rgb(244, 200, 255);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 0;
+      box-sizing: border-box;
+    }
+
+    .port {
+      font-size: 35px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    nav {
+      display: flex;
+      gap: 10px;
+    }
+
+    nav button {
+      padding: 8px 16px;
+      font-weight: bold;
+      cursor: pointer;
+      background-color: rgb(188, 184, 205);
+      border: solid 1.5px #555;
+      border-radius: 7px;
+      transition: box-shadow 0.15s, background-color 0.15s;
+    }
+
+    nav button:hover {
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+      background-color: rgb(209, 200, 201);
+    }
+
+    nav button.active {
+      background-color: #7a42f4;
+      color: white;
+      box-shadow: 0 0 8px #7a42f4;
+    }
+
+    section {
+      display: none;
+      padding: 20px;
+      max-width: 1000px;
+      margin: 20px auto;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      font-size: 18px;
+      overflow-y: auto;
+    }
+
+    .story{
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: bold;
+    }
+
+    ul.w{
+       list-style-type: circle;
+    }
+
+    table{
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 100%;
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    th,td{
+      border: 1px solid black;
+      padding: 6px;
+    }
+
+    th {
+      background-color: #bec0cb;
+    }
+
+    section.active {
+      display: block;
+    }
